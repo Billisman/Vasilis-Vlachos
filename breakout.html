@@ -26,67 +26,65 @@
         <div class="project-show">
             <div class="about-container">
                 <h1>About</h1>
-                <p>Breakout originated as an internship project intended to deepen my familiarity with the Godot engine. 
-                    As development progressed, I extended the project to incorporate backend-oriented functionality aligned 
-                    with my experience as a web developer. This involved implementing structured data management using JSON, 
-                    designing and deploying a lightweight server, and establishing a communication layer between the Godot 
-                    client and the backend service. Through these additions, I was able to prototype and evaluate backend 
-                    workflows—such as request/response handling, data serialization, and state synchronization—within an 
-                    interactive game environment.
+                <p>Breakout began as an internship project to deepen my familiarity with the Godot engine. As development progressed, I expanded it with backend-focused features aligned with 
+                    my web development experience, including JSON-based data management, a lightweight server, and client–server communication. This allowed me to prototype and evaluate backend 
+                    workflows—such as request handling, data serialization, and state synchronization—within an interactive game environment
                 </p>
             </div>
 
             <div class="project-info-container">
                 <h1>Project Info</h1>
-                <ul>
-                    <li>
+                <div>
+                    <span>
                         <i class="fa-solid fa-user"></i>
                         Role: Gameplay Programmer
-                    </li>
-                    <li>
+                    </span>
+                    <span>
                         <i class="fa-solid fa-people-group"></i>
                         Team Size: 1
-                    </li>
-                    <li>
+                    </span>
+                    <span>
                         <i class="fa-solid fa-user-clock"></i>
                         Time Frame: 4 Weeks
-                    </li>
-                    <li>
+                    </span>
+                    <span>
                         <i class="fa-solid fa-microchip"></i>
                         Engine: Godot (GDScript, Rust)
-                    </li>
-                </ul>
+                    </span>
+                </div>
             </div>
             <a href="index.html" target="_self">
                 <button class="back-btn"> Back -> </button>
             </a>
         </div>
         <div class="implementations-physics-ball">
-            <h1>Core Gameplay</h1>
-            <p>The project is a breakout game with some extra implementation that I added for my internship.The bricks 
-                that can be broken need to havethe same color as the ball, which is something that I did using the 
-                modulate od the bricks and ball and define when it will break using signals.There is a 'deathzone' 
-                below that signifies when the user lost a life and when they lose3 lives the lose the game. This also 
-                happened using signals where in the main-game loop I wrote the signal code and then activated it
-                inside different scripts. The same I also did with the score using signals again. The next addition to
-                the game was a dedicated server that stored in web the players score but also the user could write his name
-                and save it as well together with the score. I did this to work both for web export but also the scores and
-                names can be stored/saved locally on the computer of the user.
+            <h1>Introduction</h1>
+            <p>This project is an extended implementation of a classic Breakout game developed during my internship. A key gameplay mechanic involves color-based brick destruction: bricks can 
+                only be broken when their color matches that of the ball. This behavior is implemented by dynamically modifying the modulate property of both the ball and the bricks, while 
+                collision outcomes are handled through a signal-based event system.
+                The game includes a designated death zone positioned below the paddle, which detects when the ball falls out of bounds and triggers a life-loss event. Player lives are managed 
+                centrally, and the game transitions to a game-over state after three lost lives. Both life management and scoring systems are implemented using custom signals, defined within 
+                the main game loop and emitted from relevant gameplay scripts to ensure loose coupling and modularity.
+                An additional feature of the project is a dedicated score management system that supports both local and web-based persistence. Players can enter a username, and their name–score
+                pair is stored either locally on the user’s machine or remotely when exported to the web. This approach ensures consistent functionality across platforms while demonstrating 
+                client–server interaction and persistent data handling.
+            </p>
+        </div>
+        <div class="CSA-design-pattern">
+            <h1>Client-Server Architexture</h1>
+            <p>
+                
             </p>
         </div>
         <div class="what-i-learned">
             <h1>What I Learned</h1>
             <p>
-                During this project I learned a lot about different ways of communicating between scripts, that makes it more
-                simple and readable for another programmer. It was my first time trying to set up a server and connect it with 
-                the game engine to store some data and through this experience I learned a lot of important things. First, how 
-                to make an HTTP request to the server, how to make the data that you want to send into a valid format which in
-                this situation was JSON format and finally how to get it from the server, parse it and have it ready. This was
-                also the first time that I created this connection using Rust and more specifically the Arctix-Web library that
-                Rust provides. This project was something that made me realize how much enthusiasm I have for web developement 
-                (even though i created a game) for both frontend and mostly on backend work and made me push more for the dream
-                of becoming a full-stack developer. This was also one of the reasons that I got this internship because my supervisor
-                is a senior fullstack Rust developer and through  him I took a glimpse of what o fullstack web developer does.
+                During this project, I learned how to design clear and maintainable communication between different parts of an application, focusing on modularity and readability through 
+                event-driven patterns. I also gained my first hands-on experience integrating a client application with a backend service, including sending and receiving data via HTTP, working 
+                with JSON serialization, and handling server responses.
+                The backend component was implemented in Rust using the Actix-Web framework, which introduced me to core backend concepts such as API endpoints and data persistence. Although 
+                the project was game-oriented, it reinforced my strong interest in web development—particularly backend and full-stack engineering—and helped me understand how these principles 
+                apply across different types of software systems.
             </p>
         </div>
     </div>

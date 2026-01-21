@@ -38,17 +38,17 @@ body{
 }
 
 .about-container p{
-    background-color: rgba(160, 160, 160, 0.808);
+    background-color: rgba(160, 160, 160, 0.288);
     height: 250px;
     width: 500px;
     font-size: large;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 10px;
     padding: 2%;
+    color: rgba(255, 255, 255, 0.925);
+    text-align: left;
+    font-size: larger;
+    
 }
 
 .project-info-container h1{
@@ -64,19 +64,26 @@ body{
     flex-direction: row;
 }
 
-.project-info-container ul{
-    background-color: rgba(160, 160, 160, 0.808);
+.project-info-container div{
+    background-color: rgba(160, 160, 160, 0.288);
     height: 250px;
     width: 500px;
     font-size: large;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     border-radius: 10px;
     padding-right: 10px;
+    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.925);
+    text-align: left;
+    font-size: larger;
 }
 
 .back-btn{
@@ -98,12 +105,11 @@ body{
 }
 
 .implementations-physics-ball p{
-    background-color:  rgba(160, 160, 160, 0.808);
-    border-radius: 15px;
-    font-size: large;
-    text-align: center;
-    padding: 2%;
-
+    color: rgba(255, 255, 255, 0.925);
+    font-size: x-large;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .implementations-physics-ball h1{
@@ -123,9 +129,9 @@ body{
 
 
 .what-i-learned p{
-     background-color:  rgba(160, 160, 160, 0.808);
-     border-radius: 15px;
-     font-size: large;
-     text-align: center;
-     padding: 2%;
+    color: rgba(255, 255, 255, 0.925);
+    font-size: x-large;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
 }
