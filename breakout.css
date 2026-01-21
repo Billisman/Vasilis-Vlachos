@@ -119,6 +119,50 @@ body{
     color: aqua;
 }
 
+.CSA-design-pattern h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: aqua;
+}
+
+.CSA-design-pattern p{
+     color: rgba(255, 255, 255, 0.925);
+    font-size: x-large;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.event-driven-architecture h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: aqua;
+}
+
+.event-driven-architecture p{
+     color: rgba(255, 255, 255, 0.925);
+    font-size: x-large;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.separation-of-concerns h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: aqua;
+}
+
+.separation-of-concerns p{
+     color: rgba(255, 255, 255, 0.925);
+    font-size: x-large;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+}
 
 .what-i-learned h1{
     display: flex;

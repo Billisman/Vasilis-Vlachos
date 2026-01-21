@@ -73,7 +73,25 @@
         <div class="CSA-design-pattern">
             <h1>Client-Server Architexture</h1>
             <p>
-                
+                I implemented a basic client-server setup where the backend was written in Rust and the client was built using Godot. The client communicates with the server through HTTP requests
+                to send and retrieve the highscores and the name of the player, while the server handles these requests and return structured responses. This helped me understand how client-server
+                communication works in practice and how backend services can be integrated with a frontend application. 
+            </p>
+        </div>
+        <div class="event-driven-architecture">
+            <h1>Event Driven Architexture</h1>
+            <p>
+                The game uses an event-driven architecture where different parts of the system communicate through signals. For example, when the ball hits a brick, a signal is emitted to 
+                update the score or remove the brick, and when the player loses a life, a signal triggers the life count update and potentially the game-over state. This approach allowed me 
+                to keep the code modular and organized, making it easier to manage multiple systems that interact without being tightly connected.
+            </p>
+        </div>
+        <div class="separation-of-concerns">
+            <h1>Separation Of Concerns (SoC)</h1>
+            <p>
+                In this project, I applied the principle of separation of concerns by keeping different parts of the game logic separate. For example, collision detection, score handling, 
+                life management, and UI updates were all managed in their own scripts, while the main game loop coordinated the overall flow. This made the code easier to read, maintain, and 
+                extend, and taught me how to structure applications in a modular way—an approach that directly applies to web development.
             </p>
         </div>
         <div class="what-i-learned">
