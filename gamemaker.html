@@ -26,36 +26,34 @@
         <div class="project-show">
             <div class="about-container">
                 <h1>About</h1>
-                <p>Breakout originated as an internship project intended to deepen my familiarity with the Godot engine. 
-                    As development progressed, I extended the project to incorporate backend-oriented functionality aligned 
-                    with my experience as a web developer. This involved implementing structured data management using JSON, 
-                    designing and deploying a lightweight server, and establishing a communication layer between the Godot 
-                    client and the backend service. Through these additions, I was able to prototype and evaluate backend 
-                    workflows—such as request/response handling, data serialization, and state synchronization—within an 
-                    interactive game environment.
+                <p>Lead Programmer on a 2D narrative-driven game built with GameMaker (GML). I designed and implemented a 
+                    modular dialogue system and puzzle flow, focusing on state management, event handling, and reusable code 
+                    structures.This project strengthened my ability to structure interactive systems, manage user-driven flows, 
+                    and build scalable logic—skills that translate directly to front-end and back-end web development. I also worked closely 
+                    with a multidisciplinary team, contributing to code organization and technical decision-making.
                 </p>
             </div>
 
             <div class="project-info-container">
                 <h1>Project Info</h1>
-                <ul>
-                    <li>
+                <div>
+                    <span>
                         <i class="fa-solid fa-user"></i>
                         Role: Lead Programmer
-                    </li>
-                    <li>
+                    </span>
+                    <span>
                         <i class="fa-solid fa-people-group"></i>
                         Team Size: 3
-                    </li>
-                    <li>
+                    </span>
+                    <span>
                         <i class="fa-solid fa-user-clock"></i>
                         Time Frame: 4 Weeks
-                    </li>
-                    <li>
+                    </span>
+                    <span>
                         <i class="fa-solid fa-microchip"></i>
                         Engine: Gamemaker (GML)
-                    </li>
-                </ul>
+                    </span>
+                </div>
             </div>
             <a href="index.html" target="_self">
                 <button class="back-btn"> Back -> </button>
@@ -63,30 +61,22 @@
         </div>
         <div class="implementations-physics-ball">
             <h1>Core Gameplay</h1>
-            <p>The project is a breakout game with some extra implementation that I added for my internship.The bricks 
-                that can be broken need to havethe same color as the ball, which is something that I did using the 
-                modulate od the bricks and ball and define when it will break using signals.There is a 'deathzone' 
-                below that signifies when the user lost a life and when they lose3 lives the lose the game. This also 
-                happened using signals where in the main-game loop I wrote the signal code and then activated it
-                inside different scripts. The same I also did with the score using signals again. The next addition to
-                the game was a dedicated server that stored in web the players score but also the user could write his name
-                and save it as well together with the score. I did this to work both for web export but also the scores and
-                names can be stored/saved locally on the computer of the user.
+            <p>A 2D narrative-driven experience where the player guides a lost axolotl through interconnected areas. 
+                Progression is driven by interacting with NPCs through a dialogue system, unlocking new paths, and 
+                solving puzzles to advance.Gameplay focuses on player interaction, with dialogue choices triggering 
+                events and puzzles acting as progression gates. The structure emphasizes a clear flow between exploration, 
+                narrative, and problem-solving.
             </p>
         </div>
         <div class="what-i-learned">
             <h1>What I Learned</h1>
             <p>
-                During this project I learned a lot about different ways of communicating between scripts, that makes it more
-                simple and readable for another programmer. It was my first time trying to set up a server and connect it with 
-                the game engine to store some data and through this experience I learned a lot of important things. First, how 
-                to make an HTTP request to the server, how to make the data that you want to send into a valid format which in
-                this situation was JSON format and finally how to get it from the server, parse it and have it ready. This was
-                also the first time that I created this connection using Rust and more specifically the Arctix-Web library that
-                Rust provides. This project was something that made me realize how much enthusiasm I have for web developement 
-                (even though i created a game) for both frontend and mostly on backend work and made me push more for the dream
-                of becoming a full-stack developer. This was also one of the reasons that I got this internship because my supervisor
-                is a senior fullstack Rust developer and through  him I took a glimpse of what o fullstack web developer does.
+                This project helped me build a strong foundation in structuring interactive systems and managing application state. 
+                Developing the dialogue system required handling user input, controlling flow logic, and organizing reusable 
+                components—concepts that directly translate to front-end development.On the puzzle side, I worked on designing 
+                scalable logic and event-driven systems, which connects closely to back-end thinking, such as handling data flow, 
+                conditions, and system architecture.Overall, the project strengthened my ability to write maintainable code, think 
+                in terms of user experience and flow, and bridge logic between front-end interaction and back-end structure.
             </p>
         </div>
     </div>
