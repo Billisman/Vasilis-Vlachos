@@ -120,6 +120,36 @@ body{
     color: aqua;
 }
 
+.dialogue-system h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: aqua;
+}
+
+.dialogue-system p{
+     color: rgba(255, 255, 255, 0.925);
+    font-size: x-large;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.software-architecture h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: aqua;
+}
+
+.software-architecture p{
+     color: rgba(255, 255, 255, 0.925);
+    font-size: x-large;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 
 .what-i-learned h1{
     display: flex;
